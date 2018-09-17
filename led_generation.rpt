@@ -1,0 +1,266 @@
+Info: Starting: Create simulation model
+Info: ip-generate --project-directory=D:/Downloads/Uefs/2018.2/MI-Sistemas_Digitais/led_control/ --output-directory=D:/Downloads/Uefs/2018.2/MI-Sistemas_Digitais/led_control/led/simulation/ --file-set=SIM_VERILOG --report-file=html:D:/Downloads/Uefs/2018.2/MI-Sistemas_Digitais/led_control/led.html --report-file=sopcinfo:D:/Downloads/Uefs/2018.2/MI-Sistemas_Digitais/led_control/led.sopcinfo --report-file=csv:D:/Downloads/Uefs/2018.2/MI-Sistemas_Digitais/led_control/led.csv --report-file=spd:D:/Downloads/Uefs/2018.2/MI-Sistemas_Digitais/led_control/led.spd --report-file=sip:D:/Downloads/Uefs/2018.2/MI-Sistemas_Digitais/led_control/led/simulation/led.sip --report-file=cmp:D:/Downloads/Uefs/2018.2/MI-Sistemas_Digitais/led_control/led.cmp --system-info=DEVICE_FAMILY="Cyclone IV GX" --system-info=DEVICE=EP4CGX15BF14A7 --system-info=DEVICE_SPEEDGRADE=7 --component-file=D:/Downloads/Uefs/2018.2/MI-Sistemas_Digitais/led_control/led.qsys
+Progress: Loading led_control/led.qsys
+Progress: Reading input file
+Progress: Adding clk_0 [clock_source 13.1]
+Progress: Parameterizing module clk_0
+Progress: Adding nios2_processor [altera_nios2_qsys 13.1]
+Progress: Parameterizing module nios2_processor
+Progress: Adding onchip_memory2_0 [altera_avalon_onchip_memory2 13.1]
+Progress: Parameterizing module onchip_memory2_0
+Progress: Adding button_1 [altera_avalon_pio 13.1]
+Progress: Parameterizing module button_1
+Progress: Adding button_2 [altera_avalon_pio 13.1]
+Progress: Parameterizing module button_2
+Progress: Adding output_y [altera_avalon_pio 13.1]
+Progress: Parameterizing module output_y
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: led.button_1: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: led.button_2: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: led: Generating led "led" for SIM_VERILOG
+Info: pipeline_bridge_swap_transform: After transform: 6 modules, 17 connections
+Info: No custom instruction connections, skipping transform 
+Info: merlin_initial_interconnect_transform: After transform: 6 modules, 17 connections
+Info: merlin_translator_transform: After transform: 13 modules, 38 connections
+Info: merlin_domain_transform: After transform: 26 modules, 105 connections
+Info: merlin_router_transform: After transform: 33 modules, 126 connections
+Info: merlin_network_to_switch_transform: After transform: 46 modules, 154 connections
+Info: merlin_clock_and_reset_bridge_transform: After transform: 48 modules, 201 connections
+Info: merlin_hierarchy_transform: After transform: 7 modules, 19 connections
+Info: merlin_mm_transform: After transform: 7 modules, 19 connections
+Info: merlin_interrupt_mapper_transform: After transform: 8 modules, 22 connections
+Info: reset_adaptation_transform: After transform: 10 modules, 30 connections
+Info: nios2_processor: Starting RTL generation for module 'led_nios2_processor'
+Info: nios2_processor:   Generation command is [exec D:/altera/13.1/quartus/bin/eperlcmd.exe -I D:/altera/13.1/quartus/bin/perl/lib -I D:/altera/13.1/quartus/sopc_builder/bin/europa -I D:/altera/13.1/quartus/sopc_builder/bin/perl_lib -I D:/altera/13.1/quartus/sopc_builder/bin -I D:/altera/13.1/quartus/../ip/altera/nios2_ip/altera_nios2/cpu_lib -I D:/altera/13.1/quartus/../ip/altera/nios2_ip/altera_nios2/nios_lib -I D:/altera/13.1/quartus/../ip/altera/nios2_ip/altera_nios2 -I D:/altera/13.1/quartus/../ip/altera/nios2_ip/altera_nios2 -- D:/altera/13.1/quartus/../ip/altera/nios2_ip/altera_nios2/generate_rtl.epl --name=led_nios2_processor --dir=C:/Users/T-Gamer/AppData/Local/Temp/alt7791_5667736040920346362.dir/0001_nios2_processor_gen/ --quartus_dir=D:/altera/13.1/quartus --verilog --config=C:/Users/T-Gamer/AppData/Local/Temp/alt7791_5667736040920346362.dir/0001_nios2_processor_gen//led_nios2_processor_processor_configuration.pl  --do_build_sim=1    --sim_dir=C:/Users/T-Gamer/AppData/Local/Temp/alt7791_5667736040920346362.dir/0001_nios2_processor_gen/  ]
+Info: nios2_processor: # 2018.09.16 23:23:12 (*) Starting Nios II generation
+Info: nios2_processor: # 2018.09.16 23:23:12 (*)   Checking for plaintext license.
+Info: nios2_processor: # 2018.09.16 23:23:14 (*)   Couldn't query license setup in Quartus directory D:/altera/13.1/quartus
+Info: nios2_processor: # 2018.09.16 23:23:14 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable
+Info: nios2_processor: # 2018.09.16 23:23:14 (*)   LM_LICENSE_FILE environment variable is empty
+Info: nios2_processor: # 2018.09.16 23:23:14 (*)   Plaintext license not found.
+Info: nios2_processor: # 2018.09.16 23:23:14 (*)   No license required to generate encrypted Nios II/e.
+Info: nios2_processor: # 2018.09.16 23:23:14 (*)   Elaborating CPU configuration settings
+Info: nios2_processor: # 2018.09.16 23:23:14 (*)   Creating all objects for CPU
+Info: nios2_processor: # 2018.09.16 23:23:15 (*)   Creating 'C:/Users/T-Gamer/AppData/Local/Temp/alt7791_5667736040920346362.dir/0001_nios2_processor_gen//led_nios2_processor_nios2_waves.do'
+Info: nios2_processor: # 2018.09.16 23:23:15 (*)   Generating RTL from CPU objects
+Info: nios2_processor: # 2018.09.16 23:23:15 (*)   Creating plain-text RTL
+Info: nios2_processor: # 2018.09.16 23:23:16 (*) Done Nios II generation
+Info: nios2_processor: Done RTL generation for module 'led_nios2_processor'
+Info: nios2_processor: "led" instantiated altera_nios2_qsys "nios2_processor"
+Info: onchip_memory2_0: Starting RTL generation for module 'led_onchip_memory2_0'
+Info: onchip_memory2_0:   Generation command is [exec D:/altera/13.1/quartus/bin/perl/bin/perl.exe -I D:/altera/13.1/quartus/bin/perl/lib -I D:/altera/13.1/quartus/sopc_builder/bin/europa -I D:/altera/13.1/quartus/sopc_builder/bin/perl_lib -I D:/altera/13.1/quartus/sopc_builder/bin -I D:/altera/13.1/quartus/../ip/altera/sopc_builder_ip/common -I D:/altera/13.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- D:/altera/13.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=led_onchip_memory2_0 --dir=C:/Users/T-Gamer/AppData/Local/Temp/alt7791_5667736040920346362.dir/0002_onchip_memory2_0_gen/ --quartus_dir=D:/altera/13.1/quartus --verilog --config=C:/Users/T-Gamer/AppData/Local/Temp/alt7791_5667736040920346362.dir/0002_onchip_memory2_0_gen//led_onchip_memory2_0_component_configuration.pl  --do_build_sim=1    --sim_dir=C:/Users/T-Gamer/AppData/Local/Temp/alt7791_5667736040920346362.dir/0002_onchip_memory2_0_gen/  ]
+Info: onchip_memory2_0: Done RTL generation for module 'led_onchip_memory2_0'
+Info: onchip_memory2_0: "led" instantiated altera_avalon_onchip_memory2 "onchip_memory2_0"
+Info: button_1: Starting RTL generation for module 'led_button_1'
+Info: button_1:   Generation command is [exec D:/altera/13.1/quartus/bin/perl/bin/perl.exe -I D:/altera/13.1/quartus/bin/perl/lib -I D:/altera/13.1/quartus/sopc_builder/bin/europa -I D:/altera/13.1/quartus/sopc_builder/bin/perl_lib -I D:/altera/13.1/quartus/sopc_builder/bin -I D:/altera/13.1/quartus/../ip/altera/sopc_builder_ip/common -I D:/altera/13.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- D:/altera/13.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=led_button_1 --dir=C:/Users/T-Gamer/AppData/Local/Temp/alt7791_5667736040920346362.dir/0003_button_1_gen/ --quartus_dir=D:/altera/13.1/quartus --verilog --config=C:/Users/T-Gamer/AppData/Local/Temp/alt7791_5667736040920346362.dir/0003_button_1_gen//led_button_1_component_configuration.pl  --do_build_sim=1    --sim_dir=C:/Users/T-Gamer/AppData/Local/Temp/alt7791_5667736040920346362.dir/0003_button_1_gen/  ]
+Info: button_1: Done RTL generation for module 'led_button_1'
+Info: button_1: "led" instantiated altera_avalon_pio "button_1"
+Info: output_y: Starting RTL generation for module 'led_output_y'
+Info: output_y:   Generation command is [exec D:/altera/13.1/quartus/bin/perl/bin/perl.exe -I D:/altera/13.1/quartus/bin/perl/lib -I D:/altera/13.1/quartus/sopc_builder/bin/europa -I D:/altera/13.1/quartus/sopc_builder/bin/perl_lib -I D:/altera/13.1/quartus/sopc_builder/bin -I D:/altera/13.1/quartus/../ip/altera/sopc_builder_ip/common -I D:/altera/13.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- D:/altera/13.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=led_output_y --dir=C:/Users/T-Gamer/AppData/Local/Temp/alt7791_5667736040920346362.dir/0004_output_y_gen/ --quartus_dir=D:/altera/13.1/quartus --verilog --config=C:/Users/T-Gamer/AppData/Local/Temp/alt7791_5667736040920346362.dir/0004_output_y_gen//led_output_y_component_configuration.pl  --do_build_sim=1    --sim_dir=C:/Users/T-Gamer/AppData/Local/Temp/alt7791_5667736040920346362.dir/0004_output_y_gen/  ]
+Info: output_y: Done RTL generation for module 'led_output_y'
+Info: output_y: "led" instantiated altera_avalon_pio "output_y"
+Info: pipeline_bridge_swap_transform: After transform: 42 modules, 138 connections
+Info: No custom instruction connections, skipping transform 
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 42 modules, 138 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 42 modules, 138 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 42 modules, 138 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 42 modules, 138 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 42 modules, 138 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 42 modules, 138 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 42 modules, 138 connections
+Info: mm_interconnect_0: "led" instantiated altera_merlin_interconnect_wrapper "mm_interconnect_0"
+Info: irq_mapper: "led" instantiated altera_irq_mapper "irq_mapper"
+Info: rst_controller: "led" instantiated altera_reset_controller "rst_controller"
+Info: nios2_processor_instruction_master_translator: "mm_interconnect_0" instantiated altera_merlin_master_translator "nios2_processor_instruction_master_translator"
+Info: nios2_processor_jtag_debug_module_translator: "mm_interconnect_0" instantiated altera_merlin_slave_translator "nios2_processor_jtag_debug_module_translator"
+Info: nios2_processor_instruction_master_translator_avalon_universal_master_0_agent: "mm_interconnect_0" instantiated altera_merlin_master_agent "nios2_processor_instruction_master_translator_avalon_universal_master_0_agent"
+Info: nios2_processor_jtag_debug_module_translator_avalon_universal_slave_0_agent: "mm_interconnect_0" instantiated altera_merlin_slave_agent "nios2_processor_jtag_debug_module_translator_avalon_universal_slave_0_agent"
+Info: nios2_processor_jtag_debug_module_translator_avalon_universal_slave_0_agent_rsp_fifo: "mm_interconnect_0" instantiated altera_avalon_sc_fifo "nios2_processor_jtag_debug_module_translator_avalon_universal_slave_0_agent_rsp_fifo"
+Info: addr_router: "mm_interconnect_0" instantiated altera_merlin_router "addr_router"
+Info: addr_router_001: "mm_interconnect_0" instantiated altera_merlin_router "addr_router_001"
+Info: id_router: "mm_interconnect_0" instantiated altera_merlin_router "id_router"
+Info: id_router_002: "mm_interconnect_0" instantiated altera_merlin_router "id_router_002"
+Info: cmd_xbar_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_xbar_demux"
+Info: cmd_xbar_demux_001: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_xbar_demux_001"
+Info: cmd_xbar_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_xbar_mux"
+Info: cmd_xbar_mux_002: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_xbar_mux_002"
+Info: Reusing file D:/Downloads/Uefs/2018.2/MI-Sistemas_Digitais/led_control/led/simulation/submodules/altera_merlin_arbitrator.sv
+Info: rsp_xbar_demux_002: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_xbar_demux_002"
+Info: rsp_xbar_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_xbar_mux"
+Info: Reusing file D:/Downloads/Uefs/2018.2/MI-Sistemas_Digitais/led_control/led/simulation/submodules/altera_merlin_arbitrator.sv
+Info: rsp_xbar_mux_001: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_xbar_mux_001"
+Info: Reusing file D:/Downloads/Uefs/2018.2/MI-Sistemas_Digitais/led_control/led/simulation/submodules/altera_merlin_arbitrator.sv
+Info: led: Done "led" with 24 modules, 45 files, 808236 bytes
+Info: ip-generate succeeded.
+Info: Finished: Create simulation model
+Info: Starting: Create Modelsim Project.
+Info: sim-script-gen --spd=D:/Downloads/Uefs/2018.2/MI-Sistemas_Digitais/led_control/led.spd --output-directory=D:/Downloads/Uefs/2018.2/MI-Sistemas_Digitais/led_control/led/simulation/
+Info: Doing: ip-make-simscript --spd=D:/Downloads/Uefs/2018.2/MI-Sistemas_Digitais/led_control/led.spd --output-directory=D:/Downloads/Uefs/2018.2/MI-Sistemas_Digitais/led_control/led/simulation/
+Info: Generating the following file(s) for MODELSIM simulator in D:/Downloads/Uefs/2018.2/MI-Sistemas_Digitais/led_control/led/simulation/ directory:
+Info: 	mentor/msim_setup.tcl
+Info: Generating the following file(s) for VCS simulator in D:/Downloads/Uefs/2018.2/MI-Sistemas_Digitais/led_control/led/simulation/ directory:
+Info: 	synopsys/vcs/vcs_setup.sh
+Info: Generating the following file(s) for VCSMX simulator in D:/Downloads/Uefs/2018.2/MI-Sistemas_Digitais/led_control/led/simulation/ directory:
+Info: 	synopsys/vcsmx/synopsys_sim.setup
+Info: 	synopsys/vcsmx/vcsmx_setup.sh
+Info: Generating the following file(s) for NCSIM simulator in D:/Downloads/Uefs/2018.2/MI-Sistemas_Digitais/led_control/led/simulation/ directory:
+Info: 	cadence/cds.lib
+Info: 	cadence/hdl.var
+Info: 	cadence/ncsim_setup.sh
+Info: 	23 .cds.lib files in cadence/cds_libs/ directory
+Info: Generating the following file(s) for RIVIERA simulator in D:/Downloads/Uefs/2018.2/MI-Sistemas_Digitais/led_control/led/simulation/ directory:
+Info: 	aldec/rivierapro_setup.tcl
+Info: Finished: Create Modelsim Project.
+Info: Starting: Create block symbol file (.bsf)
+Info: ip-generate --project-directory=D:/Downloads/Uefs/2018.2/MI-Sistemas_Digitais/led_control/ --output-directory=D:/Downloads/Uefs/2018.2/MI-Sistemas_Digitais/led_control/led/ --report-file=bsf:D:/Downloads/Uefs/2018.2/MI-Sistemas_Digitais/led_control/led.bsf --system-info=DEVICE_FAMILY="Cyclone IV GX" --system-info=DEVICE=EP4CGX15BF14A7 --system-info=DEVICE_SPEEDGRADE=7 --component-file=D:/Downloads/Uefs/2018.2/MI-Sistemas_Digitais/led_control/led.qsys
+Progress: Loading led_control/led.qsys
+Progress: Reading input file
+Progress: Adding clk_0 [clock_source 13.1]
+Progress: Parameterizing module clk_0
+Progress: Adding nios2_processor [altera_nios2_qsys 13.1]
+Progress: Parameterizing module nios2_processor
+Progress: Adding onchip_memory2_0 [altera_avalon_onchip_memory2 13.1]
+Progress: Parameterizing module onchip_memory2_0
+Progress: Adding button_1 [altera_avalon_pio 13.1]
+Progress: Parameterizing module button_1
+Progress: Adding button_2 [altera_avalon_pio 13.1]
+Progress: Parameterizing module button_2
+Progress: Adding output_y [altera_avalon_pio 13.1]
+Progress: Parameterizing module output_y
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: led.button_1: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: led.button_2: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: ip-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: ip-generate --project-directory=D:/Downloads/Uefs/2018.2/MI-Sistemas_Digitais/led_control/ --output-directory=D:/Downloads/Uefs/2018.2/MI-Sistemas_Digitais/led_control/led/synthesis/ --file-set=QUARTUS_SYNTH --report-file=html:D:/Downloads/Uefs/2018.2/MI-Sistemas_Digitais/led_control/led.html --report-file=sopcinfo:D:/Downloads/Uefs/2018.2/MI-Sistemas_Digitais/led_control/led.sopcinfo --report-file=cmp:D:/Downloads/Uefs/2018.2/MI-Sistemas_Digitais/led_control/led.cmp --report-file=qip:D:/Downloads/Uefs/2018.2/MI-Sistemas_Digitais/led_control/led/synthesis/led.qip --report-file=svd --report-file=regmap:D:/Downloads/Uefs/2018.2/MI-Sistemas_Digitais/led_control/led/synthesis/led.regmap --report-file=debuginfo:D:/Downloads/Uefs/2018.2/MI-Sistemas_Digitais/led_control/led/synthesis/led.debuginfo --system-info=DEVICE_FAMILY="Cyclone IV GX" --system-info=DEVICE=EP4CGX15BF14A7 --system-info=DEVICE_SPEEDGRADE=7 --component-file=D:/Downloads/Uefs/2018.2/MI-Sistemas_Digitais/led_control/led.qsys --language=VERILOG
+Progress: Loading led_control/led.qsys
+Progress: Reading input file
+Progress: Adding clk_0 [clock_source 13.1]
+Progress: Parameterizing module clk_0
+Progress: Adding nios2_processor [altera_nios2_qsys 13.1]
+Progress: Parameterizing module nios2_processor
+Progress: Adding onchip_memory2_0 [altera_avalon_onchip_memory2 13.1]
+Progress: Parameterizing module onchip_memory2_0
+Progress: Adding button_1 [altera_avalon_pio 13.1]
+Progress: Parameterizing module button_1
+Progress: Adding button_2 [altera_avalon_pio 13.1]
+Progress: Parameterizing module button_2
+Progress: Adding output_y [altera_avalon_pio 13.1]
+Progress: Parameterizing module output_y
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: led.button_1: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: led.button_2: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: led: Generating led "led" for QUARTUS_SYNTH
+Info: pipeline_bridge_swap_transform: After transform: 6 modules, 17 connections
+Info: No custom instruction connections, skipping transform 
+Info: merlin_initial_interconnect_transform: After transform: 6 modules, 17 connections
+Info: merlin_translator_transform: After transform: 13 modules, 38 connections
+Info: merlin_domain_transform: After transform: 26 modules, 105 connections
+Info: merlin_router_transform: After transform: 33 modules, 126 connections
+Info: merlin_network_to_switch_transform: After transform: 46 modules, 154 connections
+Info: merlin_clock_and_reset_bridge_transform: After transform: 48 modules, 201 connections
+Info: merlin_hierarchy_transform: After transform: 7 modules, 19 connections
+Info: merlin_mm_transform: After transform: 7 modules, 19 connections
+Info: merlin_interrupt_mapper_transform: After transform: 8 modules, 22 connections
+Info: reset_adaptation_transform: After transform: 10 modules, 30 connections
+Info: nios2_processor: Starting RTL generation for module 'led_nios2_processor'
+Info: nios2_processor:   Generation command is [exec D:/altera/13.1/quartus/bin/eperlcmd.exe -I D:/altera/13.1/quartus/bin/perl/lib -I D:/altera/13.1/quartus/sopc_builder/bin/europa -I D:/altera/13.1/quartus/sopc_builder/bin/perl_lib -I D:/altera/13.1/quartus/sopc_builder/bin -I D:/altera/13.1/quartus/../ip/altera/nios2_ip/altera_nios2/cpu_lib -I D:/altera/13.1/quartus/../ip/altera/nios2_ip/altera_nios2/nios_lib -I D:/altera/13.1/quartus/../ip/altera/nios2_ip/altera_nios2 -I D:/altera/13.1/quartus/../ip/altera/nios2_ip/altera_nios2 -- D:/altera/13.1/quartus/../ip/altera/nios2_ip/altera_nios2/generate_rtl.epl --name=led_nios2_processor --dir=C:/Users/T-Gamer/AppData/Local/Temp/alt7791_5667736040920346362.dir/0023_nios2_processor_gen/ --quartus_dir=D:/altera/13.1/quartus --verilog --config=C:/Users/T-Gamer/AppData/Local/Temp/alt7791_5667736040920346362.dir/0023_nios2_processor_gen//led_nios2_processor_processor_configuration.pl  --do_build_sim=0  ]
+Info: nios2_processor: # 2018.09.16 23:23:23 (*) Starting Nios II generation
+Info: nios2_processor: # 2018.09.16 23:23:23 (*)   Checking for plaintext license.
+Info: nios2_processor: # 2018.09.16 23:23:23 (*)   Couldn't query license setup in Quartus directory D:/altera/13.1/quartus
+Info: nios2_processor: # 2018.09.16 23:23:23 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable
+Info: nios2_processor: # 2018.09.16 23:23:23 (*)   LM_LICENSE_FILE environment variable is empty
+Info: nios2_processor: # 2018.09.16 23:23:23 (*)   Plaintext license not found.
+Info: nios2_processor: # 2018.09.16 23:23:23 (*)   No license required to generate encrypted Nios II/e.
+Info: nios2_processor: # 2018.09.16 23:23:23 (*)   Elaborating CPU configuration settings
+Info: nios2_processor: # 2018.09.16 23:23:23 (*)   Creating all objects for CPU
+Info: nios2_processor: # 2018.09.16 23:23:24 (*)   Generating RTL from CPU objects
+Info: nios2_processor: # 2018.09.16 23:23:24 (*)   Creating plain-text RTL
+Info: nios2_processor: # 2018.09.16 23:23:25 (*) Done Nios II generation
+Info: nios2_processor: Done RTL generation for module 'led_nios2_processor'
+Info: nios2_processor: "led" instantiated altera_nios2_qsys "nios2_processor"
+Info: onchip_memory2_0: Starting RTL generation for module 'led_onchip_memory2_0'
+Info: onchip_memory2_0:   Generation command is [exec D:/altera/13.1/quartus/bin/perl/bin/perl.exe -I D:/altera/13.1/quartus/bin/perl/lib -I D:/altera/13.1/quartus/sopc_builder/bin/europa -I D:/altera/13.1/quartus/sopc_builder/bin/perl_lib -I D:/altera/13.1/quartus/sopc_builder/bin -I D:/altera/13.1/quartus/../ip/altera/sopc_builder_ip/common -I D:/altera/13.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- D:/altera/13.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=led_onchip_memory2_0 --dir=C:/Users/T-Gamer/AppData/Local/Temp/alt7791_5667736040920346362.dir/0024_onchip_memory2_0_gen/ --quartus_dir=D:/altera/13.1/quartus --verilog --config=C:/Users/T-Gamer/AppData/Local/Temp/alt7791_5667736040920346362.dir/0024_onchip_memory2_0_gen//led_onchip_memory2_0_component_configuration.pl  --do_build_sim=0  ]
+Info: onchip_memory2_0: Done RTL generation for module 'led_onchip_memory2_0'
+Info: onchip_memory2_0: "led" instantiated altera_avalon_onchip_memory2 "onchip_memory2_0"
+Info: button_1: Starting RTL generation for module 'led_button_1'
+Info: button_1:   Generation command is [exec D:/altera/13.1/quartus/bin/perl/bin/perl.exe -I D:/altera/13.1/quartus/bin/perl/lib -I D:/altera/13.1/quartus/sopc_builder/bin/europa -I D:/altera/13.1/quartus/sopc_builder/bin/perl_lib -I D:/altera/13.1/quartus/sopc_builder/bin -I D:/altera/13.1/quartus/../ip/altera/sopc_builder_ip/common -I D:/altera/13.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- D:/altera/13.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=led_button_1 --dir=C:/Users/T-Gamer/AppData/Local/Temp/alt7791_5667736040920346362.dir/0025_button_1_gen/ --quartus_dir=D:/altera/13.1/quartus --verilog --config=C:/Users/T-Gamer/AppData/Local/Temp/alt7791_5667736040920346362.dir/0025_button_1_gen//led_button_1_component_configuration.pl  --do_build_sim=0  ]
+Info: button_1: Done RTL generation for module 'led_button_1'
+Info: button_1: "led" instantiated altera_avalon_pio "button_1"
+Info: output_y: Starting RTL generation for module 'led_output_y'
+Info: output_y:   Generation command is [exec D:/altera/13.1/quartus/bin/perl/bin/perl.exe -I D:/altera/13.1/quartus/bin/perl/lib -I D:/altera/13.1/quartus/sopc_builder/bin/europa -I D:/altera/13.1/quartus/sopc_builder/bin/perl_lib -I D:/altera/13.1/quartus/sopc_builder/bin -I D:/altera/13.1/quartus/../ip/altera/sopc_builder_ip/common -I D:/altera/13.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- D:/altera/13.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=led_output_y --dir=C:/Users/T-Gamer/AppData/Local/Temp/alt7791_5667736040920346362.dir/0026_output_y_gen/ --quartus_dir=D:/altera/13.1/quartus --verilog --config=C:/Users/T-Gamer/AppData/Local/Temp/alt7791_5667736040920346362.dir/0026_output_y_gen//led_output_y_component_configuration.pl  --do_build_sim=0  ]
+Info: output_y: Done RTL generation for module 'led_output_y'
+Info: output_y: "led" instantiated altera_avalon_pio "output_y"
+Info: pipeline_bridge_swap_transform: After transform: 42 modules, 138 connections
+Info: No custom instruction connections, skipping transform 
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 42 modules, 138 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 42 modules, 138 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 42 modules, 138 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 42 modules, 138 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 42 modules, 138 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 42 modules, 138 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 42 modules, 138 connections
+Info: mm_interconnect_0: "led" instantiated altera_merlin_interconnect_wrapper "mm_interconnect_0"
+Info: irq_mapper: "led" instantiated altera_irq_mapper "irq_mapper"
+Info: rst_controller: "led" instantiated altera_reset_controller "rst_controller"
+Info: nios2_processor_instruction_master_translator: "mm_interconnect_0" instantiated altera_merlin_master_translator "nios2_processor_instruction_master_translator"
+Info: nios2_processor_jtag_debug_module_translator: "mm_interconnect_0" instantiated altera_merlin_slave_translator "nios2_processor_jtag_debug_module_translator"
+Info: nios2_processor_instruction_master_translator_avalon_universal_master_0_agent: "mm_interconnect_0" instantiated altera_merlin_master_agent "nios2_processor_instruction_master_translator_avalon_universal_master_0_agent"
+Info: nios2_processor_jtag_debug_module_translator_avalon_universal_slave_0_agent: "mm_interconnect_0" instantiated altera_merlin_slave_agent "nios2_processor_jtag_debug_module_translator_avalon_universal_slave_0_agent"
+Info: nios2_processor_jtag_debug_module_translator_avalon_universal_slave_0_agent_rsp_fifo: "mm_interconnect_0" instantiated altera_avalon_sc_fifo "nios2_processor_jtag_debug_module_translator_avalon_universal_slave_0_agent_rsp_fifo"
+Info: addr_router: "mm_interconnect_0" instantiated altera_merlin_router "addr_router"
+Info: addr_router_001: "mm_interconnect_0" instantiated altera_merlin_router "addr_router_001"
+Info: id_router: "mm_interconnect_0" instantiated altera_merlin_router "id_router"
+Info: id_router_002: "mm_interconnect_0" instantiated altera_merlin_router "id_router_002"
+Info: cmd_xbar_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_xbar_demux"
+Info: cmd_xbar_demux_001: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_xbar_demux_001"
+Info: cmd_xbar_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_xbar_mux"
+Info: cmd_xbar_mux_002: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_xbar_mux_002"
+Info: Reusing file D:/Downloads/Uefs/2018.2/MI-Sistemas_Digitais/led_control/led/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_xbar_demux_002: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_xbar_demux_002"
+Info: rsp_xbar_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_xbar_mux"
+Info: Reusing file D:/Downloads/Uefs/2018.2/MI-Sistemas_Digitais/led_control/led/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_xbar_mux_001: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_xbar_mux_001"
+Info: Reusing file D:/Downloads/Uefs/2018.2/MI-Sistemas_Digitais/led_control/led/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: led: Done "led" with 24 modules, 38 files, 794993 bytes
+Info: ip-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

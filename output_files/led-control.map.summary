@@ -1,0 +1,18 @@
+Analysis & Synthesis Status : Successful - Sun Sep 16 23:24:42 2018
+Quartus II 64-Bit Version : 13.1.0 Build 162 10/23/2013 SJ Full Version
+Revision Name : led-control
+Top-level Entity Name : led
+Family : Cyclone IV GX
+Total logic elements : 1,436
+    Total combinational functions : 1,286
+    Dedicated logic registers : 756
+Total registers : 756
+Total pins : 9
+Total virtual pins : 0
+Total memory bits : 43,008
+Embedded Multiplier 9-bit elements : 0
+Total GXB Receiver Channel PCS : 0
+Total GXB Receiver Channel PMA : 0
+Total GXB Transmitter Channel PCS : 0
+Total GXB Transmitter Channel PMA : 0
+Total PLLs : 0

@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="led-control">
+		<CBX_INST_ENTRY INSTANCE_NAME="|led|led_nios2_processor:nios2_processor|led_nios2_processor_nios2_oci:the_led_nios2_processor_nios2_oci|led_nios2_processor_nios2_ocimem:the_led_nios2_processor_nios2_ocimem|led_nios2_processor_ociram_sp_ram_module:led_nios2_processor_ociram_sp_ram|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_5991.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|led|led_nios2_processor:nios2_processor|led_nios2_processor_register_bank_a_module:led_nios2_processor_register_bank_a|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_i2h1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|led|led_nios2_processor:nios2_processor|led_nios2_processor_register_bank_b_module:led_nios2_processor_register_bank_b|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_j2h1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|led|led_onchip_memory2_0:onchip_memory2_0|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_foc1.tdf"/>
+	</PROJECT>
+</LOG_ROOT>
